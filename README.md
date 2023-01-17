@@ -1,4 +1,4 @@
-# Next.js + Tailwind CSS + TypeScript Starter Template
+# Next.js + TailwindCSS + TypeScript Starter Template
 
 <div align="center">
   <h2>Made with ❤ by <a href="https://github.com/roqqetmedia">Roqqet Media</a></h2>
@@ -7,8 +7,8 @@
 ## Features
 
 - Next.js 13
-- React 18
-- TypeScript
+- React.js 18
+- TypeScript 4
 - TailwindCSS 3
 - Framer Motion
 - Absolute Import and Path Alias — Import components using `@/` prefix
