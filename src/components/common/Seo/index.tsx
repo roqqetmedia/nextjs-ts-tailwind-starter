@@ -7,7 +7,11 @@ interface SeoProps {
   canonicalUrl?: string;
 }
 
-export function Seo({ title, description, canonicalUrl }: SeoProps) {
+export function Seo({
+  title,
+  description = "NextJS starter template",
+  canonicalUrl,
+}: SeoProps) {
   return (
     <Head>
       <title>
