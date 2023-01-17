@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install"
@@ -14,6 +15,7 @@
     "classnames": "2.3.2",
     "framer-motion": "8.4.3",
     "next": "13.1.2",
+    "next-sitemap": "3.1.45",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-wrap-balancer": "0.3.0"
