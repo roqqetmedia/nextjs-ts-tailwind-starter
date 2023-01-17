@@ -8,6 +8,10 @@
     "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint",
+    "lint:strict": "eslint --max-warnings=0 src",
+    "format": "prettier -w .",
+    "format:check": "prettier -c .",
+    "typecheck": "tsc --noEmit --incremental false",
     "prepare": "husky install"
   },
   "dependencies": {
