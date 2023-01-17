@@ -1,7 +1,7 @@
 # Next.js + Tailwind CSS + TypeScript Starter Template
 
 <div align="center">
-  <h1>Made by <a href="https://github.com/alipiry">Ali Piry</a></h1>
+  <h2>Made with love by <a href="https://github.com/alipiry">Ali Piry</a></h2>
 </div>
 
 ## Features
@@ -9,7 +9,7 @@
 - Next.js 13
 - React 18
 - TypeScript
-- Tailwind CSS 3
+- TailwindCSS 3
 - Framer Motion
 - Absolute Import and Path Alias — Import components using `@/` prefix
 - ESLint
