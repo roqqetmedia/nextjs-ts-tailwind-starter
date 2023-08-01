@@ -1,13 +1,15 @@
-import { SITE_URL } from "@/config";
+export const currentYear = new Date().getFullYear();
 
-export const siteMetadata = {
-  siteName: "Roqqet Media NextJS Starter",
-  siteUrl: SITE_URL,
+export const staggerContainerVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
 };
 
-export const year = new Date().getFullYear();
-
-export const FADE_DOWN_ANIMATION_VARIANTS = {
+export const fadeUpAnimationVariants = {
   hidden: { opacity: 0, y: -10 },
   show: { opacity: 1, y: 0, transition: { type: "spring" } },
 };

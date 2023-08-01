@@ -14,8 +14,10 @@ module.exports = {
   ],
   rules: {
     "no-unused-vars": "off",
-    "no-console": "warn",
+    "no-console": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-var-requires": "off",
     "react/no-unescaped-entities": "off",
     "react/display-name": "off",
     "react/jsx-curly-brace-presence": [
