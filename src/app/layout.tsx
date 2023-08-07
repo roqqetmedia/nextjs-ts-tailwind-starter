@@ -26,7 +26,7 @@ export const metadata = {
     siteName: "Roqqet Media",
     images: [
       {
-        url: "/og.png",
+        url: "/images/og.png",
         width: 2800,
         height: 1600,
         alt: "Roqqet Media",
@@ -40,7 +40,7 @@ export const metadata = {
     title: "Roqqet Media",
     description: "NextJS starter template",
     site: "@roqqetmedia",
-    images: ["/og.png"],
+    images: ["/images/og.png"],
   },
   robots: {
     index: APP_ENV === "production",
