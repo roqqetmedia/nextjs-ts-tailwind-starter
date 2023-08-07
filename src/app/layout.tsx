@@ -3,12 +3,59 @@ import { Montserrat } from "next/font/google";
 import { twMerge } from "tailwind-merge";
 import Header from "@/ui/header/header";
 import Footer from "@/ui/footer/footer";
+import { APP_ENV, SITE_URL } from "@/config";
 import "@/app/globals.css";
 
 export const metadata = {
-  title: "Roqqet Media",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+  },
+  title: {
+    template: "%s | Roqqet Media",
+    default: "Roqqet Media",
+  },
   description: "NextJS starter template",
-  keywords: ["Roqqet Media", "Nextjs", "Starter"],
+  keywords: ["Roqqet Media", "Nextjs", "Starter", "App Router"],
+  metadataBase: new URL(SITE_URL),
+  openGraph: {
+    title: "Roqqet Media",
+    description: "NextJS starter template",
+    url: SITE_URL,
+    siteName: "Roqqet Media",
+    images: [
+      {
+        url: "/og.png",
+        width: 2800,
+        height: 1600,
+        alt: "Roqqet Media",
+      },
+    ],
+    locale: "en_UK",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Roqqet Media",
+    description: "NextJS starter template",
+    site: "@roqqetmedia",
+    images: ["/og.png"],
+  },
+  robots: {
+    index: APP_ENV === "production",
+    follow: APP_ENV === "production",
+    "max-image-preview": "large",
+    "max-video-preview": -1,
+    "max-snippet": -1,
+    googleBot: {
+      index: APP_ENV === "production",
+      follow: APP_ENV === "production",
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+      "max-snippet": -1,
+    },
+  },
 };
 
 const montserrat = Montserrat({
