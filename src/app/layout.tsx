@@ -17,6 +17,10 @@ export const metadata = {
   },
   description: "NextJS starter template",
   keywords: ["Roqqet Media", "Nextjs", "Starter", "App Router"],
+  themeColor: "white",
+  formatDetection: {
+    telephone: false,
+  },
   metadataBase: new URL(SITE_URL),
   openGraph: {
     title: "Roqqet Media",
