@@ -35,7 +35,7 @@ export const metadata = {
         alt: "Roqqet Media",
       },
     ],
-    locale: "en_UK",
+    locale: "en_GB",
     type: "website",
   },
   twitter: {
