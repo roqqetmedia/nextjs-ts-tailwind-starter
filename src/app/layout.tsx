@@ -1,8 +1,7 @@
 import { ReactNode } from "react";
-import { Montserrat } from "next/font/google";
-import { twMerge } from "tailwind-merge";
 import Header from "@/ui/header/header";
 import Footer from "@/ui/footer/footer";
+import { cn, montserratFont } from "@/utils";
 import { APP_ENV, SITE_URL } from "@/config";
 import "@/app/globals.css";
 
@@ -35,7 +34,7 @@ export const metadata = {
         alt: "Roqqet Media",
       },
     ],
-    locale: "en_UK",
+    locale: "en_GB",
     type: "website",
   },
   twitter: {
@@ -61,12 +60,6 @@ export const metadata = {
   },
 };
 
-const montserrat = Montserrat({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  subsets: ["latin"],
-  variable: "--font-montserrat",
-});
-
 interface RootLayoutProps {
   children: ReactNode;
 }
@@ -75,8 +68,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body
-        className={twMerge(
-          montserrat.variable,
+        className={cn(
+          montserratFont.variable,
           "font-sans",
           "flex h-screen flex-col justify-between",
         )}

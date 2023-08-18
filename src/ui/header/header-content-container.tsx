@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { twMerge } from "tailwind-merge";
 import { useImageLoading } from "@/hooks";
+import { cn } from "@/utils";
 import { fadeUpAnimationVariants } from "@/consts";
 
 export default function HeaderContentContainer() {
@@ -21,7 +21,7 @@ export default function HeaderContentContainer() {
         variants={fadeUpAnimationVariants}
       >
         <Image
-          className={twMerge(
+          className={cn(
             "h-auto w-full",
             "duration-700 ease-in-out",
             loadingAnimation,
