@@ -9,7 +9,7 @@
   a,
   button,
   svg {
-    @apply text-black duration-700;
+    @apply text-black duration-300;
   }
   h1,
   h2,
