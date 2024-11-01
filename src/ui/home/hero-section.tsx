@@ -2,7 +2,7 @@ import HeroContentContainer from "./hero-content-container";
 
 export default function HeroSection() {
   return (
-    <section className="container">
+    <section>
       <HeroContentContainer />
     </section>
   );

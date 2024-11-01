@@ -6,7 +6,7 @@
 
 ## Features
 
-- Next.js 13
+- Next.js 14
 - React.js 18
 - TypeScript 5
 - TailwindCSS 3
