@@ -1,22 +1,15 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-@layer base {
-  html {
-    @apply !scroll-smooth;
-  }
-  a,
-  button,
-  svg {
-    @apply text-black duration-300;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  span {
-    @apply text-black;
-  }
+@plugin "@tailwindcss/typography";
+
+@theme inline {
+  --font-sans: var(--font-montserrat);
+}
+
+@theme {
+  --z-index-1: 1;
+  --z-index-2: 2;
+  --z-index-3: 3;
+  --z-index-4: 4;
+  --z-index-5: 5;
 }

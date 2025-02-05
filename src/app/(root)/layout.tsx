@@ -13,7 +13,7 @@ import "@/app/globals.css";
 
 export const metadata = {
   title: {
-    template: `%s |${metaTitle}`,
+    template: `%s | ${metaTitle}`,
     default: metaTitle,
   },
   description: metaDesc,
@@ -60,7 +60,7 @@ interface RootLayoutProps {
   children: ReactNode;
 }
 
-export default function RootLayout({ children }: RootLayoutProps) {
+export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
   return (
     <html lang="en">
       <body
