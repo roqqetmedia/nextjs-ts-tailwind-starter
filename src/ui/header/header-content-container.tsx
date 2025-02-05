@@ -29,6 +29,7 @@ export default function HeaderContentContainer() {
               loadingAnimation,
             )}
             onLoad={handleOnLoadingComplete}
+            priority
             src="/images/roqqetmedia.svg"
             alt="Roqqet Media"
             width={721}

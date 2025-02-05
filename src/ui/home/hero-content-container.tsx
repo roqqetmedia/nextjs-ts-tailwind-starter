@@ -27,6 +27,7 @@ export default function HeroContentContainer() {
         >
           <Image
             loading="eager"
+            priority
             fill
             src="/images/roqqetman.svg"
             alt="RoqqetMan"
