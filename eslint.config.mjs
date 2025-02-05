@@ -48,7 +48,7 @@ const eslintConfig = [
     "next",
     "next/core-web-vitals",
     "plugin:@typescript-eslint/recommended",
-    "prettier"
+    "prettier",
   ),
   {
     rules: {
