@@ -6,10 +6,10 @@
 
 ## Features
 
-- Next.js 14
-- React.js 18
+- Next.js 15
+- React.js 19
 - TypeScript 5
-- TailwindCSS 3
+- TailwindCSS 4
 - Framer Motion
 - Absolute Import and Path Alias — Import components using `@/` prefix
 - ESLint
