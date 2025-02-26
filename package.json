@@ -10,7 +10,8 @@
     "lint:strict": "eslint --max-warnings=0 src",
     "format": "prettier -w .",
     "format:check": "prettier -c .",
-    "typecheck": "tsc --noEmit --incremental false"
+    "typecheck": "tsc --noEmit --incremental false",
+    "prepare": "husky"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.3",
