@@ -47,5 +47,5 @@ export const staggerContainerVariants = {
 
 export const fadeUpAnimationVariants = {
   hidden: { opacity: 0, y: -10 },
-  show: { opacity: 1, y: 0, transition: { type: "spring" } },
+  show: { opacity: 1, y: 0, transition: { type: "spring" as const } },
 };
